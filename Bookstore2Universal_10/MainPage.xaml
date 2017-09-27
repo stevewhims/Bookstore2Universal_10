@@ -39,6 +39,8 @@
 
 		<!--TitlePanel contains the name of the application and page title-->
 		<StackPanel x:Name="TitlePanel" Margin="{StaticResource TitlePanelMargin}">
+			<TextBlock x:Name="magictb" x:Uid="/Resources/Greeting" Margin="9.6,0"/>
+			<TextBlock x:Name="magictb2" x:Uid="/Errors/Greeting" Margin="9.6,0"/>
 			<TextBlock Text="{Binding AppName}" Style="{StaticResource TitleTextBlockStyle}" Margin="9.6,0"/>
             <TextBlock Text="{Binding PageTitle}" Margin="7.2,0,0,0" Style="{StaticResource HeaderTextBlockStyle}"/>
 		</StackPanel>

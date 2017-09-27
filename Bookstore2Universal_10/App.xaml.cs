@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.Resources.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -28,7 +29,9 @@ namespace Bookstore2Universal_10
         /// </summary>
         public App()
         {
-            this.InitializeComponent();
+			ResourceContext.SetGlobalQualifierValue("custom", "lenovox", ResourceQualifierPersistence.None);
+
+			this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
 

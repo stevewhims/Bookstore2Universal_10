@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Bookstore2Universal_10</RootNamespace>
     <AssemblyName>Bookstore2Universal_10</AssemblyName>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>en</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.15063.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
@@ -107,8 +107,26 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="Bookstore2Universal_10_TemporaryKey.pfx" />
+    <PRIResource Include="Strings\ja\Resources.resw" />
+    <PRIResource Include="Strings\ja\ManifestResources.resw" />
+    <PRIResource Include="Strings\en\ManifestResources.resw" />
+    <PRIResource Include="Strings\en\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\CoverImages\contrast-black\five.png" />
+    <Content Include="Assets\CoverImages\contrast-black\four.png" />
+    <Content Include="Assets\CoverImages\contrast-black\one.png" />
+    <Content Include="Assets\CoverImages\contrast-black\seven.png" />
+    <Content Include="Assets\CoverImages\contrast-black\six.png" />
+    <Content Include="Assets\CoverImages\contrast-black\three.png" />
+    <Content Include="Assets\CoverImages\contrast-black\two.png" />
+    <Content Include="Assets\CoverImages\contrast-white\five.png" />
+    <Content Include="Assets\CoverImages\contrast-white\four.png" />
+    <Content Include="Assets\CoverImages\contrast-white\one.png" />
+    <Content Include="Assets\CoverImages\contrast-white\seven.png" />
+    <Content Include="Assets\CoverImages\contrast-white\six.png" />
+    <Content Include="Assets\CoverImages\contrast-white\three.png" />
+    <Content Include="Assets\CoverImages\contrast-white\two.png" />
     <Content Include="Assets\CoverImages\five.png" />
     <Content Include="Assets\CoverImages\four.png" />
     <Content Include="Assets\CoverImages\one.png" />
@@ -116,6 +134,8 @@
     <Content Include="Assets\CoverImages\six.png" />
     <Content Include="Assets\CoverImages\three.png" />
     <Content Include="Assets\CoverImages\two.png" />
+    <Content Include="Assets\en\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\ja\Square44x44Logo.scale-200.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -139,8 +159,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="SeZoUC.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

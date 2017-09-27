@@ -61,7 +61,7 @@
     <DataTemplate x:Key="BookTemplateWide">
         <Grid HorizontalAlignment="Left" Width="250" Height="250">
             <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}"/>
-            <Image Source="{Binding CoverImage}" Stretch="UniformToFill"/>
+			<Image Source="file:/Assets/CoverImages/five.png" Stretch="UniformToFill"/>
             <StackPanel VerticalAlignment="Bottom" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
                 <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" Margin="12,0,24,0" Text="{Binding Title}"/>
                 <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="{Binding Author.Name}" Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" Margin="12,0,12,12"/>
