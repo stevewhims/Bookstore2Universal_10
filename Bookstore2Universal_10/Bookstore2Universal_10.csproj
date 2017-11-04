@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Bookstore2Universal_10</RootNamespace>
     <AssemblyName>Bookstore2Universal_10</AssemblyName>
-    <DefaultLanguage>en</DefaultLanguage>
+    <DefaultLanguage>fr-FR</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.15063.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
@@ -107,9 +107,15 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="Bookstore2Universal_10_TemporaryKey.pfx" />
+    <PRIResource Include="Strings\fr-FR\Resources.resw" />
+    <PRIResource Include="Strings\fr-FR\ManifestResources.resw" />
     <PRIResource Include="Strings\ja\Resources.resw" />
-    <PRIResource Include="Strings\ja\ManifestResources.resw" />
-    <PRIResource Include="Strings\en\ManifestResources.resw" />
+    <PRIResource Include="Strings\ja\ManifestResources.resw">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </PRIResource>
+    <PRIResource Include="Strings\en\ManifestResources.resw">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </PRIResource>
     <PRIResource Include="Strings\en\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
@@ -134,7 +140,9 @@
     <Content Include="Assets\CoverImages\six.png" />
     <Content Include="Assets\CoverImages\three.png" />
     <Content Include="Assets\CoverImages\two.png" />
+    <Content Include="Assets\en-US\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\en\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\ja-JP\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\ja\Square44x44Logo.scale-200.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
