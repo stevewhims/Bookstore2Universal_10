@@ -1,0 +1,11 @@
+﻿<default>
+  <qualifier name="Language" value="en-us" />
+  <qualifier name="Contrast" value="black" />
+  <qualifier name="Scale" value="120" />
+  <qualifier name="HomeRegion" value="001" />
+  <qualifier name="TargetSize" value="256" />
+  <qualifier name="LayoutDirection" value="LTR" />
+  <qualifier name="DXFeatureLevel" value="DX9" />
+  <qualifier name="Configuration" value="" />
+  <qualifier name="AlternateForm" value="" />
+</default>

@@ -40,6 +40,21 @@ namespace Bookstore2Universal_10
             this.InitializeComponent();
 
 			var contrastValue = Windows.ApplicationModel.Resources.Core.ResourceContext.GetForCurrentView().QualifierValues["contrast"];
-		}
+            this.magictb.Text = contrastValue;
+
+            // Use the Windows.Globalization.DateTimeFormatting.DateTimeFormatter class
+            // to display dates and times using basic formatters.
+
+            var shortDateFormatter = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("shortdate");
+            var shortTimeFormatter = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("shorttime");
+
+            var dateToFormat = DateTime.Now;
+
+            var shortDate = shortDateFormatter.Format(dateToFormat);
+            var shortTime = shortTimeFormatter.Format(dateToFormat);
+
+            var results = "Short Date: " + shortDate + "\n" +
+                          "Short Time: " + shortTime;
+        }
 	}
 }
